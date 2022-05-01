@@ -33,6 +33,8 @@ pseudo(
     }
 
 
+    /* div que engloba a logo,
+     */
     .logo{
 
     /* center */
@@ -50,6 +52,9 @@ pseudo(
 
 
     }
+
+    /* circulo vermelho com borda branca
+     */
     .circle{
         /* center */
     position:absolute;
@@ -66,6 +71,7 @@ pseudo(
     box-shadow: 0 0 5vmin 5vmin #ff0017;
     }
 
+    /* linha branca do lado esquerdo */
     .a-shape{
      /* center */
      z-index: 2;
@@ -80,17 +86,22 @@ pseudo(
     transform: rotate(25deg) skewY(-25deg);  
     }
 
+    /* linha vermelha do lado esquerdo,
+    ela vai de cima até embaixo */
     .a-shape::before{
         /* pseudo */
         content: '';
         position: absolute;
         left: -1.5vmin;
-        top: 6.5vmin;
+        top: 9vmin;
         width: 1.6vmin;
         height: 55vmin;
         background: #ff0017;
     }
 
+    /* detalhe da linha branca à esquerda
+    na ponta debaixo, ele aumenta um pouco a largura
+    da linha na parte inferior */
     .a-shape:after{
         /*pseudo */
         content: '';
@@ -103,6 +114,9 @@ pseudo(
 
     }
 
+
+    /* linha vermelha do lado direito da linha
+    da esquerda */
     .left-shape-line{
         background: #ff0017;
         position:absolute;
@@ -117,6 +131,7 @@ pseudo(
         transform: rotate(-2.9deg);
     }
 
+    /* linha branca de centro do "A" */
     .center-shape{
         background: white;
         margin: auto;
@@ -130,6 +145,8 @@ pseudo(
         height: 8.15vmin;
     }
 
+    
+    /* linha vermelha encima do triângulo central */
     .center-shape::before{
         /* pseudo */
         content: '';
@@ -143,6 +160,8 @@ pseudo(
         transform: rotate(32.3deg);
     }
 
+
+    /* triângulo da linha central do "A" */
     .center-shape-right{
 
         margin: auto;
@@ -161,6 +180,8 @@ pseudo(
         transform: rotate(-15deg);
     }
 
+
+    /* linha vermelha embaixo do trângulo */
     .center-shape-right::before{
         content: '';
         position: absolute;
@@ -171,6 +192,8 @@ pseudo(
         transform: rotate(-42deg);  
     }
 
+
+    /* linha branca à direita */
     .right-shape{
         margin: auto;
         right: 0;
@@ -186,6 +209,8 @@ pseudo(
         background: white;
     }
 
+    /* linha vermelha ao lado direito da linha branca
+    à direita */
     .right-shape::after{
         content: '';
         position: absolute;
